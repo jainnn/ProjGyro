@@ -17,7 +17,7 @@ function setup(){
     });
 
 
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 6; i++) {
     	bulles[i] = new Bulle();
     };
 }
