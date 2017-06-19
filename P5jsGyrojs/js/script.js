@@ -16,7 +16,7 @@ function setup(){
         forceY = o.beta/50;
     });
 
-    // création des bulles
+
     for (var i = 0; i < 5; i++) {
     	bulles[i] = new Bulle();
     };
@@ -54,7 +54,8 @@ Bulle.prototype = {
 		} else if(this.y > height-this.diam/2){
 			this.y = height-this.diam/2;
 		}
-
-		ellipse(this.x, this.y, this.diam, this.diam);		
+		rectMode(CENTER);
+		rect(this.x, this.y, this.diam, this.diam);
+		//ellipse(this.x, this.y, this.diam, this.diam);		
 	}
 }
